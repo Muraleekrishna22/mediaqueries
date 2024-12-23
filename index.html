@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Munnar Tourism</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <style>
+        
+        @media (max-width: 767px) {
+            .navbar-nav {
+                text-align: center;
+            }
+
+            .card-group {
+                display: block;
+            }
+        }
+
+        @media (min-width: 768px) and (max-width: 1199px) {
+            .card-group {
+                display: flex;
+                justify-content: space-around;
+            }
+        }
+
+        @media (min-width: 1200px) {
+            .card-group {
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+
+        .footer {
+            background-color: #f1f1f1;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <header class="bg-primary text-white text-center py-4">
+        <h1> <span style="color: black;">Munnar</span> Tourism</h1>
+        <p style="color: honeydew;">Explore the natural beauty of Munnar, Kerala</p>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Munnar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Attractions</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    
+    <main class="container my-5 ">
+        <h2 class="text-center mb-4">Top Tourist Attractions in Munnar</h2>
+        <div class="card-group">
+
+            <div class="card">
+                <img src="data:image/jpeg;base64,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"
+                    class="card-img-top" alt="Tea Gardens">
+                <div class="card-body">
+                    <h5 class="card-title">Tea Gardens</h5>
+                    <p class="card-text">Munnar is famous for its lush tea plantations. A must-see for nature lovers.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://banzaaratravels.com/wp-content/uploads/2023/05/Kaziranga-National-Park-in-Assam_1553856939-300x200.webp"
+                    class="card-img-top" alt="Eravikulam National Park">
+                <div class="card-body">
+                    <h5 class="card-title">Eravikulam National Park</h5>
+                    <p class="card-text">Explore the wildlife and natural beauty of the park, home to the Nilgiri Tahr.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://static.vecteezy.com/system/resources/thumbnails/006/432/045/small/dam-wall-with-full-of-water-thailand-photo.jpg"
+                    class="card-img-top" alt="Mattupetty Dam">
+                <div class="card-body">
+                    <h5 class="card-title">Mattupetty Dam</h5>
+                    <p class="card-text">Enjoy boating and the scenic views at Mattupetty Dam, located amidst hills and
+                        tea estates.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://static.vecteezy.com/system/resources/thumbnails/048/140/218/small/a-waterfall-is-shown-in-the-dark-with-the-sun-shining-background-free-photo.jpg"
+                    class="card-img-top" alt="">
+                <div class="card-body">
+                    <h5 class="card-title">Waterfalls Munnar</h5>
+                    <p class="card-text">Explore the beutiful waterfalls in munnar. Be mesmerized.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>Follow Us:</p>
+        <a href="https://www.facebook.com" target="_blank" class="mr-3"><i class="fab fa-facebook fa-2x"></i></a>
+        <a href="https://www.instagram.com" target="_blank" class="mr-3"><i class="fab fa-instagram fa-2x"></i></a>
+        <a href="https://www.twitter.com" target="_blank" class="mr-3"><i class="fab fa-twitter fa-2x"></i></a>
+        <p>&copy; 2024 Munnar Tourism. All Rights Reserved.</p>
+    </footer>
+
+   
+</body>
+
+</html>
